@@ -11,3 +11,4 @@ class good():
 print ("dakshesh")
 
 print ("HUMONICS")
+print ("table tennis")
