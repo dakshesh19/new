@@ -12,3 +12,6 @@ print ("dakshesh")
 
 print ("HUMONICS")
 print ("table tennis")
+
+def new(self):
+    pass
