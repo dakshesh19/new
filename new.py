@@ -20,3 +20,5 @@ groups = [["newton","bose", "edison"] , ["raman","gandhi" , "yellow"] , ["red", 
 for x in groups:
     for y in x:
         print (y)
+
+print ("end")
