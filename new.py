@@ -15,3 +15,8 @@ print ("table tennis")
 
 def new(self):
     pass
+
+groups = [["newton","bose", "edison"] , ["raman","gandhi" , "yellow"] , ["red", "pink" , "bluee"]]
+for x in groups:
+    for y in x:
+        print (y)
