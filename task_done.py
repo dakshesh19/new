@@ -1,7 +1,7 @@
 import json
 from datetime import date
 Date = date.today()
-print (Date)
+print ("Date")
 x = open("test.json")
 transactions = json.load(x)
 print (type(x))
