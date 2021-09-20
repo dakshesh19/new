@@ -1,0 +1,1962 @@
+{
+    "_id": {
+      "$oid": "611a2a8f7c393bb18a6bf5e4"
+    },
+    "sender_id": "aayush",
+    "active_loop": {
+      "name": "appointment_form",
+      "is_interrupted": false,
+      "rejected": false,
+      "trigger_message": {
+        "intent": {
+          "name": "greet",
+          "confidence": 0.8957431881861679
+        },
+        "entities": [],
+        "text": "hello",
+        "message_id": "0edcc132223c4b31a091067774b8644d",
+        "metadata": {},
+        "intent_ranking": [
+          {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          {
+            "name": "affirm",
+            "confidence": 0.021404649795542536
+          },
+          {
+            "name": "repeat",
+            "confidence": 0.015478872685638136
+          },
+          {
+            "name": "hold",
+            "confidence": 0.011457485170796764
+          },
+          {
+            "name": "inform",
+            "confidence": 0.009932113087131765
+          },
+          {
+            "name": "anysymptoms_affirm",
+            "confidence": 0.008335910168091177
+          },
+          {
+            "name": "deny",
+            "confidence": 0.007595165661906554
+          },
+          {
+            "name": "singledosevaccinated_affirm",
+            "confidence": 0.006850488104647537
+          },
+          {
+            "name": "covidpositive_affirm",
+            "confidence": 0.0048839300885322985
+          },
+          {
+            "name": "bookslot_deny",
+            "confidence": 0.004219506347811623
+          }
+        ],
+        "response_selector": {
+          "all_retrieval_intents": [
+            "faq"
+          ],
+          "faq": {
+            "response": {
+              "id": {
+                "$numberLong": "7557410960145903540"
+              },
+              "responses": [
+                {
+                  "text": "Vaccine is Free for all and covered by US Government"
+                }
+              ],
+              "response_templates": [
+                {
+                  "text": "Vaccine is Free for all and covered by US Government"
+                }
+              ],
+              "confidence": 0.5845553874969482,
+              "intent_response_key": "faq/costofvaccine",
+              "utter_action": "utter_faq/costofvaccine",
+              "template_name": "utter_faq/costofvaccine"
+            },
+            "ranking": [
+              {
+                "id": {
+                  "$numberLong": "7557410960145903540"
+                },
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine"
+              },
+              {
+                "id": {
+                  "$numberLong": "-6412281710925873362"
+                },
+                "confidence": 0.1856682300567627,
+                "intent_response_key": "faq/best_vaccines"
+              },
+              {
+                "id": {
+                  "$numberLong": "-2358026911896506351"
+                },
+                "confidence": 0.1747712790966034,
+                "intent_response_key": "faq/underlying_condition"
+              },
+              {
+                "id": {
+                  "$numberLong": "4517537234447594361"
+                },
+                "confidence": 0.04499286040663719,
+                "intent_response_key": "faq/how_long"
+              },
+              {
+                "id": {
+                  "$numberLong": "8473341252040933647"
+                },
+                "confidence": 0.010012272745370865,
+                "intent_response_key": "faq/doses"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1629104783.6586056,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1629104783.6588688
+      },
+      {
+        "event": "action",
+        "timestamp": 1629104783.6590114,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "user",
+        "timestamp": 1629104784.001658,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8871253698534693
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "4f6bb7d59bd64c9295b6af1f22558fd0",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8871253698534693
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.023163290514348314
+            },
+            {
+              "name": "inform",
+              "confidence": 0.015524756161916042
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.01333730014575382
+            },
+            {
+              "name": "hold",
+              "confidence": 0.012396605081116356
+            },
+            {
+              "name": "deny",
+              "confidence": 0.009115065703296794
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008414304279476773
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.006537639968531507
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.005462329112935247
+            },
+            {
+              "name": "contact_affirm",
+              "confidence": 0.004287544268136957
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "-2501536995049674291"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.9688934087753296,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "-2501536995049674291"
+                  },
+                  "confidence": 0.9688934087753296,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "5965681497445980923"
+                  },
+                  "confidence": 0.019672125577926636,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "754084984966928945"
+                  },
+                  "confidence": 0.007472108583897352,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-4030765465437696852"
+                  },
+                  "confidence": 0.0023002494126558304,
+                  "intent_response_key": "faq/doses"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-8087267429626440983"
+                  },
+                  "confidence": 0.0016621353570371866,
+                  "intent_response_key": "faq/underlying_condition"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "4f6bb7d59bd64c9295b6af1f22558fd0",
+        "metadata": {}
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629104784.00441,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629104784.0044217,
+        "name": "utter_greet",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629104784.0044875,
+        "metadata": {
+          "utter_action": "utter_greet"
+        },
+        "text": "Hello! I am calling from ABC healthcare and I am your COVID-19 Vaccination assistant. This is an important call regarding COVID-19 vaccination.",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "action",
+        "timestamp": 1629104784.0176861,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "active_loop",
+        "timestamp": 1629104784.0177948,
+        "name": "appointment_form"
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629104784.0178208,
+        "name": "requested_slot",
+        "value": "name"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629104784.0178425,
+        "metadata": {
+          "utter_action": "utter_ask_name"
+        },
+        "text": "May I know your Good name?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "action",
+        "timestamp": 1629104784.0189376,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "user",
+        "timestamp": 1629104787.4394543,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8871253698534693
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "aa2f553c0bba431fbc3118a27e33d738",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8871253698534693
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.023163290514348314
+            },
+            {
+              "name": "inform",
+              "confidence": 0.015524756161916042
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.01333730014575382
+            },
+            {
+              "name": "hold",
+              "confidence": 0.012396605081116356
+            },
+            {
+              "name": "deny",
+              "confidence": 0.009115065703296794
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008414304279476773
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.006537639968531507
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.005462329112935247
+            },
+            {
+              "name": "contact_affirm",
+              "confidence": 0.004287544268136957
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "-2501536995049674291"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.9688934087753296,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "-2501536995049674291"
+                  },
+                  "confidence": 0.9688934087753296,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "5965681497445980923"
+                  },
+                  "confidence": 0.019672125577926636,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "754084984966928945"
+                  },
+                  "confidence": 0.007472108583897352,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-4030765465437696852"
+                  },
+                  "confidence": 0.0023002494126558304,
+                  "intent_response_key": "faq/doses"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-8087267429626440983"
+                  },
+                  "confidence": 0.0016621353570371866,
+                  "intent_response_key": "faq/underlying_condition"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "aa2f553c0bba431fbc3118a27e33d738",
+        "metadata": {}
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629104787.4542482,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629104787.45426,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629104787.4543295,
+        "name": "name",
+        "value": "hellon"
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629104787.4543343,
+        "name": "requested_slot",
+        "value": "bothdose_vaccinated"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629104787.454337,
+        "metadata": {
+          "utter_action": "utter_ask_bothdose_vaccinated"
+        },
+        "text": "hellon, are you fully vaccinated?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "action",
+        "timestamp": 1629104787.4553516,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "user",
+        "timestamp": 1629105983.6668017,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "3efecbe872a645e889799bc089b2556b",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8957431881861679
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.021404649795542536
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.015478872685638136
+            },
+            {
+              "name": "hold",
+              "confidence": 0.011457485170796764
+            },
+            {
+              "name": "inform",
+              "confidence": 0.009932113087131765
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008335910168091177
+            },
+            {
+              "name": "deny",
+              "confidence": 0.007595165661906554
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.006850488104647537
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.0048839300885322985
+            },
+            {
+              "name": "bookslot_deny",
+              "confidence": 0.004219506347811623
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "3439795985481891428"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "3439795985481891428"
+                  },
+                  "confidence": 0.5845553874969482,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "6255583397637332869"
+                  },
+                  "confidence": 0.1856682300567627,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "1760827242609984302"
+                  },
+                  "confidence": 0.1747712790966034,
+                  "intent_response_key": "faq/underlying_condition"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-2121882429379879768"
+                  },
+                  "confidence": 0.04499286040663719,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-3798994020103626544"
+                  },
+                  "confidence": 0.010012272745370865,
+                  "intent_response_key": "faq/doses"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "3efecbe872a645e889799bc089b2556b",
+        "metadata": {}
+      },
+      {
+        "event": "action_execution_rejected",
+        "timestamp": 1629105983.6814857,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629105983.6842165,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629105983.684227,
+        "name": "action_default_fallback",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 0.3,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629105983.684289,
+        "metadata": {
+          "utter_action": "utter_default"
+        },
+        "text": "Sorry I didn't get that. Can you rephrase?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1629105983.6843095
+      },
+      {
+        "event": "action",
+        "timestamp": 1629105983.6856725,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "user",
+        "timestamp": 1629105985.1045778,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "fb1060e4f6ef4d669e2dbf09fe26c3ce",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8957431881861679
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.021404649795542536
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.015478872685638136
+            },
+            {
+              "name": "hold",
+              "confidence": 0.011457485170796764
+            },
+            {
+              "name": "inform",
+              "confidence": 0.009932113087131765
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008335910168091177
+            },
+            {
+              "name": "deny",
+              "confidence": 0.007595165661906554
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.006850488104647537
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.0048839300885322985
+            },
+            {
+              "name": "bookslot_deny",
+              "confidence": 0.004219506347811623
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "3439795985481891428"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "3439795985481891428"
+                  },
+                  "confidence": 0.5845553874969482,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "6255583397637332869"
+                  },
+                  "confidence": 0.1856682300567627,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "1760827242609984302"
+                  },
+                  "confidence": 0.1747712790966034,
+                  "intent_response_key": "faq/underlying_condition"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-2121882429379879768"
+                  },
+                  "confidence": 0.04499286040663719,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-3798994020103626544"
+                  },
+                  "confidence": 0.010012272745370865,
+                  "intent_response_key": "faq/doses"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "fb1060e4f6ef4d669e2dbf09fe26c3ce",
+        "metadata": {}
+      },
+      {
+        "event": "action_execution_rejected",
+        "timestamp": 1629105985.1162164,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629105985.1191509,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629105985.1191614,
+        "name": "action_default_fallback",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 0.3,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629105985.119251,
+        "metadata": {
+          "utter_action": "utter_default"
+        },
+        "text": "Sorry I didn't get that. Can you rephrase?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1629105985.1192548
+      },
+      {
+        "event": "action",
+        "timestamp": 1629105985.1208596,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "user",
+        "timestamp": 1629105988.9696972,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "fd502c3edc7b47609a223cefa597a577",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8957431881861679
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.021404649795542536
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.015478872685638136
+            },
+            {
+              "name": "hold",
+              "confidence": 0.011457485170796764
+            },
+            {
+              "name": "inform",
+              "confidence": 0.009932113087131765
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008335910168091177
+            },
+            {
+              "name": "deny",
+              "confidence": 0.007595165661906554
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.006850488104647537
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.0048839300885322985
+            },
+            {
+              "name": "bookslot_deny",
+              "confidence": 0.004219506347811623
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "3439795985481891428"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "3439795985481891428"
+                  },
+                  "confidence": 0.5845553874969482,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "6255583397637332869"
+                  },
+                  "confidence": 0.1856682300567627,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "1760827242609984302"
+                  },
+                  "confidence": 0.1747712790966034,
+                  "intent_response_key": "faq/underlying_condition"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-2121882429379879768"
+                  },
+                  "confidence": 0.04499286040663719,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-3798994020103626544"
+                  },
+                  "confidence": 0.010012272745370865,
+                  "intent_response_key": "faq/doses"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "fd502c3edc7b47609a223cefa597a577",
+        "metadata": {}
+      },
+      {
+        "event": "action_execution_rejected",
+        "timestamp": 1629105988.98035,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629105988.9832416,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629105988.9832523,
+        "name": "action_default_fallback",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 0.3,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629105988.9833171,
+        "metadata": {
+          "utter_action": "utter_default"
+        },
+        "text": "Sorry I didn't get that. Can you rephrase?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1629105988.9833205
+      },
+      {
+        "event": "action",
+        "timestamp": 1629105988.9848788,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "user",
+        "timestamp": 1629106610.2723267,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "a46dbcb66da24e8e9482feeeb27c6fca",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8957431881861679
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.021404649795542536
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.015478872685638136
+            },
+            {
+              "name": "hold",
+              "confidence": 0.011457485170796764
+            },
+            {
+              "name": "inform",
+              "confidence": 0.009932113087131765
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008335910168091177
+            },
+            {
+              "name": "deny",
+              "confidence": 0.007595165661906554
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.006850488104647537
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.0048839300885322985
+            },
+            {
+              "name": "bookslot_deny",
+              "confidence": 0.004219506347811623
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "-7505440609446590536"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "-7505440609446590536"
+                  },
+                  "confidence": 0.5845553874969482,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-6413114149638081141"
+                  },
+                  "confidence": 0.1856682300567627,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-3011201052730220586"
+                  },
+                  "confidence": 0.1747712790966034,
+                  "intent_response_key": "faq/underlying_condition"
+                },
+                {
+                  "id": {
+                    "$numberLong": "6037417063560952381"
+                  },
+                  "confidence": 0.04499286040663719,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-1793178949881784065"
+                  },
+                  "confidence": 0.010012272745370865,
+                  "intent_response_key": "faq/doses"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "a46dbcb66da24e8e9482feeeb27c6fca",
+        "metadata": {}
+      },
+      {
+        "event": "action_execution_rejected",
+        "timestamp": 1629106610.286906,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629106610.2905765,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629106610.2906008,
+        "name": "action_default_fallback",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 0.3,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629106610.2907217,
+        "metadata": {
+          "utter_action": "utter_default"
+        },
+        "text": "Sorry I didn't get that. Can you rephrase?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1629106610.2907264
+      },
+      {
+        "event": "action",
+        "timestamp": 1629106610.2928386,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "user",
+        "timestamp": 1629106611.0845735,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "508778724bab41cebbd2bad1a811d8b9",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8957431881861679
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.021404649795542536
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.015478872685638136
+            },
+            {
+              "name": "hold",
+              "confidence": 0.011457485170796764
+            },
+            {
+              "name": "inform",
+              "confidence": 0.009932113087131765
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008335910168091177
+            },
+            {
+              "name": "deny",
+              "confidence": 0.007595165661906554
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.006850488104647537
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.0048839300885322985
+            },
+            {
+              "name": "bookslot_deny",
+              "confidence": 0.004219506347811623
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "-7505440609446590536"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "-7505440609446590536"
+                  },
+                  "confidence": 0.5845553874969482,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-6413114149638081141"
+                  },
+                  "confidence": 0.1856682300567627,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-3011201052730220586"
+                  },
+                  "confidence": 0.1747712790966034,
+                  "intent_response_key": "faq/underlying_condition"
+                },
+                {
+                  "id": {
+                    "$numberLong": "6037417063560952381"
+                  },
+                  "confidence": 0.04499286040663719,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-1793178949881784065"
+                  },
+                  "confidence": 0.010012272745370865,
+                  "intent_response_key": "faq/doses"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "508778724bab41cebbd2bad1a811d8b9",
+        "metadata": {}
+      },
+      {
+        "event": "action_execution_rejected",
+        "timestamp": 1629106611.0965934,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629106611.0998,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629106611.0998106,
+        "name": "action_default_fallback",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 0.3,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629106611.099877,
+        "metadata": {
+          "utter_action": "utter_default"
+        },
+        "text": "Sorry I didn't get that. Can you rephrase?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1629106611.0998805
+      },
+      {
+        "event": "action",
+        "timestamp": 1629106611.1019263,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "user",
+        "timestamp": 1629106613.1555514,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "99738b586d00435fbbad0e2ae676078e",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8957431881861679
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.021404649795542536
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.015478872685638136
+            },
+            {
+              "name": "hold",
+              "confidence": 0.011457485170796764
+            },
+            {
+              "name": "inform",
+              "confidence": 0.009932113087131765
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008335910168091177
+            },
+            {
+              "name": "deny",
+              "confidence": 0.007595165661906554
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.006850488104647537
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.0048839300885322985
+            },
+            {
+              "name": "bookslot_deny",
+              "confidence": 0.004219506347811623
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "-7505440609446590536"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "-7505440609446590536"
+                  },
+                  "confidence": 0.5845553874969482,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-6413114149638081141"
+                  },
+                  "confidence": 0.1856682300567627,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-3011201052730220586"
+                  },
+                  "confidence": 0.1747712790966034,
+                  "intent_response_key": "faq/underlying_condition"
+                },
+                {
+                  "id": {
+                    "$numberLong": "6037417063560952381"
+                  },
+                  "confidence": 0.04499286040663719,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-1793178949881784065"
+                  },
+                  "confidence": 0.010012272745370865,
+                  "intent_response_key": "faq/doses"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "99738b586d00435fbbad0e2ae676078e",
+        "metadata": {}
+      },
+      {
+        "event": "action_execution_rejected",
+        "timestamp": 1629106613.1695104,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629106613.1728637,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629106613.1728742,
+        "name": "action_default_fallback",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 0.3,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629106613.172978,
+        "metadata": {
+          "utter_action": "utter_default"
+        },
+        "text": "Sorry I didn't get that. Can you rephrase?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1629106613.1729813
+      },
+      {
+        "event": "action",
+        "timestamp": 1629106613.175028,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "action",
+        "timestamp": 1629108649.8722863,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1629108649.872343
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629108649.8723698,
+        "name": "requested_slot",
+        "value": "name"
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629108649.8723738,
+        "name": "name",
+        "value": "hellon"
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629108649.8723767,
+        "name": "requested_slot",
+        "value": "bothdose_vaccinated"
+      },
+      {
+        "event": "action",
+        "timestamp": 1629108649.8723783,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null,
+        "action_text": null,
+        "hide_rule_turn": false
+      },
+      {
+        "event": "user",
+        "timestamp": 1629108650.1739225,
+        "text": "hello",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.8957431881861679
+          },
+          "entities": [],
+          "text": "hello",
+          "message_id": "0edcc132223c4b31a091067774b8644d",
+          "metadata": {},
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.8957431881861679
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.021404649795542536
+            },
+            {
+              "name": "repeat",
+              "confidence": 0.015478872685638136
+            },
+            {
+              "name": "hold",
+              "confidence": 0.011457485170796764
+            },
+            {
+              "name": "inform",
+              "confidence": 0.009932113087131765
+            },
+            {
+              "name": "anysymptoms_affirm",
+              "confidence": 0.008335910168091177
+            },
+            {
+              "name": "deny",
+              "confidence": 0.007595165661906554
+            },
+            {
+              "name": "singledosevaccinated_affirm",
+              "confidence": 0.006850488104647537
+            },
+            {
+              "name": "covidpositive_affirm",
+              "confidence": 0.0048839300885322985
+            },
+            {
+              "name": "bookslot_deny",
+              "confidence": 0.004219506347811623
+            }
+          ],
+          "response_selector": {
+            "all_retrieval_intents": [
+              "faq"
+            ],
+            "faq": {
+              "response": {
+                "id": {
+                  "$numberLong": "7557410960145903540"
+                },
+                "responses": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "response_templates": [
+                  {
+                    "text": "Vaccine is Free for all and covered by US Government"
+                  }
+                ],
+                "confidence": 0.5845553874969482,
+                "intent_response_key": "faq/costofvaccine",
+                "utter_action": "utter_faq/costofvaccine",
+                "template_name": "utter_faq/costofvaccine"
+              },
+              "ranking": [
+                {
+                  "id": {
+                    "$numberLong": "7557410960145903540"
+                  },
+                  "confidence": 0.5845553874969482,
+                  "intent_response_key": "faq/costofvaccine"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-6412281710925873362"
+                  },
+                  "confidence": 0.1856682300567627,
+                  "intent_response_key": "faq/best_vaccines"
+                },
+                {
+                  "id": {
+                    "$numberLong": "-2358026911896506351"
+                  },
+                  "confidence": 0.1747712790966034,
+                  "intent_response_key": "faq/underlying_condition"
+                },
+                {
+                  "id": {
+                    "$numberLong": "4517537234447594361"
+                  },
+                  "confidence": 0.04499286040663719,
+                  "intent_response_key": "faq/how_long"
+                },
+                {
+                  "id": {
+                    "$numberLong": "8473341252040933647"
+                  },
+                  "confidence": 0.010012272745370865,
+                  "intent_response_key": "faq/doses"
+                }
+              ]
+            }
+          }
+        },
+        "input_channel": "rest",
+        "message_id": "0edcc132223c4b31a091067774b8644d",
+        "metadata": {}
+      },
+      {
+        "event": "user_featurization",
+        "timestamp": 1629108650.178389,
+        "use_text_for_featurization": false
+      },
+      {
+        "event": "action",
+        "timestamp": 1629108650.1784005,
+        "name": "utter_greet",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629108650.1784627,
+        "metadata": {
+          "utter_action": "utter_greet"
+        },
+        "text": "Hello! I am calling from ABC healthcare and I am your COVID-19 Vaccination assistant. This is an important call regarding COVID-19 vaccination.",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "action",
+        "timestamp": 1629108650.2060487,
+        "name": "appointment_form",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      },
+      {
+        "event": "active_loop",
+        "timestamp": 1629108650.2061815,
+        "name": "appointment_form"
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629108650.2061892,
+        "name": "name",
+        "value": "hellon"
+      },
+      {
+        "event": "slot",
+        "timestamp": 1629108650.2061925,
+        "name": "requested_slot",
+        "value": "bothdose_vaccinated"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1629108650.2061944,
+        "metadata": {
+          "utter_action": "utter_ask_bothdose_vaccinated"
+        },
+        "text": "hellon, are you fully vaccinated?",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        }
+      },
+      {
+        "event": "action",
+        "timestamp": 1629108650.2087393,
+        "name": "action_listen",
+        "policy": "policy_2_RulePolicy",
+        "confidence": 1,
+        "action_text": null,
+        "hide_rule_turn": true
+      }
+    ],
+    "followup_action": null,
+    "latest_action": {
+      "action_name": "action_listen"
+    },
+    "latest_action_name": "action_listen",
+    "latest_event_time": 1629108650.2087393,
+    "latest_input_channel": "rest",
+    "latest_message": {
+      "intent": {
+        "name": "greet",
+        "confidence": 0.8957431881861679
+      },
+      "entities": [],
+      "text": "hello",
+      "message_id": "0edcc132223c4b31a091067774b8644d",
+      "metadata": {},
+      "intent_ranking": [
+        {
+          "name": "greet",
+          "confidence": 0.8957431881861679
+        },
+        {
+          "name": "affirm",
+          "confidence": 0.021404649795542536
+        },
+        {
+          "name": "repeat",
+          "confidence": 0.015478872685638136
+        },
+        {
+          "name": "hold",
+          "confidence": 0.011457485170796764
+        },
+        {
+          "name": "inform",
+          "confidence": 0.009932113087131765
+        },
+        {
+          "name": "anysymptoms_affirm",
+          "confidence": 0.008335910168091177
+        },
+        {
+          "name": "deny",
+          "confidence": 0.007595165661906554
+        },
+        {
+          "name": "singledosevaccinated_affirm",
+          "confidence": 0.006850488104647537
+        },
+        {
+          "name": "covidpositive_affirm",
+          "confidence": 0.0048839300885322985
+        },
+        {
+          "name": "bookslot_deny",
+          "confidence": 0.004219506347811623
+        }
+      ],
+      "response_selector": {
+        "all_retrieval_intents": [
+          "faq"
+        ],
+        "faq": {
+          "response": {
+            "id": {
+              "$numberLong": "7557410960145903540"
+            },
+            "responses": [
+              {
+                "text": "Vaccine is Free for all and covered by US Government"
+              }
+            ],
+            "response_templates": [
+              {
+                "text": "Vaccine is Free for all and covered by US Government"
+              }
+            ],
+            "confidence": 0.5845553874969482,
+            "intent_response_key": "faq/costofvaccine",
+            "utter_action": "utter_faq/costofvaccine",
+            "template_name": "utter_faq/costofvaccine"
+          },
+          "ranking": [
+            {
+              "id": {
+                "$numberLong": "7557410960145903540"
+              },
+              "confidence": 0.5845553874969482,
+              "intent_response_key": "faq/costofvaccine"
+            },
+            {
+              "id": {
+                "$numberLong": "-6412281710925873362"
+              },
+              "confidence": 0.1856682300567627,
+              "intent_response_key": "faq/best_vaccines"
+            },
+            {
+              "id": {
+                "$numberLong": "-2358026911896506351"
+              },
+              "confidence": 0.1747712790966034,
+              "intent_response_key": "faq/underlying_condition"
+            },
+            {
+              "id": {
+                "$numberLong": "4517537234447594361"
+              },
+              "confidence": 0.04499286040663719,
+              "intent_response_key": "faq/how_long"
+            },
+            {
+              "id": {
+                "$numberLong": "8473341252040933647"
+              },
+              "confidence": 0.010012272745370865,
+              "intent_response_key": "faq/doses"
+            }
+          ]
+        }
+      }
+    },
+    "paused": false,
+    "slots": {
+      "name": "hellon",
+      "symptom": null,
+      "book_slot": null,
+      "covid_positive": null,
+      "in_contact": null,
+      "any_symptoms": null,
+      "confirm_book": null,
+      "bothdose_vaccinated": null,
+      "singledose_vaccinated": null,
+      "vaccine_name": null,
+      "dob": null,
+      "dob_year": null,
+      "age": null,
+      "zip_code": null,
+      "time": null,
+      "area": null,
+      "state": null,
+      "state_abv": null,
+      "confirm_area": null,
+      "all_centre": null,
+      "n_centre": null,
+      "centre_id": null,
+      "centre": null,
+      "cnt_add": null,
+      "confirm_centre": null,
+      "all_slots": null,
+      "n_slots": null,
+      "slot_id": null,
+      "slot_date": null,
+      "slot_time": null,
+      "confirm_slot": null,
+      "requested_slot": "bothdose_vaccinated",
+      "session_started_metadata": null
+    }
+  }
