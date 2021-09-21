@@ -1,11 +1,16 @@
 import json
 from datetime import date
+from datetime import datetime
 Date = date.today()
-print (Date)
-x = open("convo_object_3.json")
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
+#print (Time)
+#print (Date)
+print ("{}                                                                  {}" .format(current_time,Date))
+x = open("convo_object_1.json")
 transactions = json.load(x)
-print (type(x))
-print (type(transactions))
+#print (type(x))
+#print (type(transactions))
 for k,v in transactions.items():
     if k == "events":
         for item in v:
