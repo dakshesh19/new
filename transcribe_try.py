@@ -1,6 +1,6 @@
-gcs_uri ='gs://ags_2021/2286220210823171141710.wav'
+gcs_uri ='gs://ags_2021/2286220210929142155867.wav'
 from google.cloud import speech
-x = open("transcribe_2" , "w")
+x = open("transcribe_enhanced_3" , "w")
 
 client = speech.SpeechClient()
 
@@ -9,6 +9,9 @@ config = speech.RecognitionConfig(
     encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
     sample_rate_hertz=8000,
     language_code="en-US",
+    use_enhanced=True,
+    # A model must be specified to use enhanced model.
+    model="phone_call",
 )
 
 operation = client.long_running_recognize(config=config, audio=audio)
