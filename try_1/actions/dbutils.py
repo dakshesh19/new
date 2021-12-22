@@ -1,20 +1,20 @@
 pizza_name = { 
     "margarita" : "100",
     "fresh pan" : "150",
-    "veggie special" : " 200",
-    "farmhouse" : "250",
-    "cheese burst" : "300"
+    "veggie special" : "200",
+    "farmhouse" : "250"
 }
 size = {  
     "small" : "1",
-    "medium" : "1.5",
-    "large" : "2"
+    "medium" : "2",
+    "large" : "3"
 }
-extra_cheese = {
-    "cheese_burst" : "60"
+cheese = {
+    "cheese burst" : "60"
 }
 side_order = {
     "cold drink" : "30",
-    "bread sticks" : "50",
-    "cheesy dip" : "50"
+    "bread stick" : "50",
+    "cheesy dip" : "50",
+    "choco lava" : "60"
 }

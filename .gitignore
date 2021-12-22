@@ -289,3 +289,4 @@ try_1/tests/test_stories.yml
 try_1/graph.html
 try_1/models/nlu-20211220-223135.tar.gz
 try_1/models/nlu-20211221-122237.tar.gz
+try_1/actions/__pycache__/dbutils.cpython-38.pyc
