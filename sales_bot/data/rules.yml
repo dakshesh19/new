@@ -6,6 +6,7 @@ rules:
   conversation_start: true
   steps:
   - intent: greet
+  - action: utter_greet
   - action: order_form
   - active_loop: order_form
 

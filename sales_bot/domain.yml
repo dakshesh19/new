@@ -61,13 +61,13 @@ forms:
   
 responses:
   utter_greet: 
-  - text: "hi welcome to pizza place. what would you like to order?"
+  - text: "hi welcome to pizza place."
 
   utter_goodbye:
   - text: "Bye"
 
   utter_ask_pizza_name:
-  - text: "Hi welcome to pizza factory. What would you like to order?"
+  - text: "which pizza would you like to order?"
 
   utter_ask_size:
   - text: "chosse between small,medium or large."

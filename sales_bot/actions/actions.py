@@ -6,12 +6,7 @@ from rasa_sdk.forms import FormValidationAction, REQUESTED_SLOT
 from rasa_sdk.types import DomainDict
 from rasa_sdk.events import SlotSet
 from typing import Any, Text, Dict, List, Optional
-from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
-import datetime
-import string
-import re
-import json
 from .dbutils import *
 
 class ValidateorderForm(FormValidationAction):
