@@ -1,0 +1,98 @@
+version: "2.0"
+
+actions:
+  - validate_order_form
+  - extract_pizza_name
+  - validate_extra_cheese
+  - action_submit
+  
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - pizza_name
+  - side_order
+  - extra_cheese
+  - size
+
+
+slots:
+  pizza_name:
+    type: text
+  size:
+    type: text
+  extra_cheese:
+    type: text
+  side_order:
+    type: text
+  total_bill:
+    type: text
+    initial_value: 0
+
+entities: 
+ - side_order
+ - pizza
+
+ 
+forms:
+  order_form:
+    required_slots:
+      pizza_name:
+        - type: from_intent
+          intent: affirmx
+          value: true
+        - type: from_intent
+          intent: denyx
+          value: false
+      size:
+        - type: from_intent
+          intent: affirmx
+          value: true
+      extra_cheese:
+        - type: from_intent
+          intent: affirmx
+          value: true
+      side_order:
+        - type: from_intent
+          intent: affirmx
+          value: true
+
+  
+responses:
+  utter_greet: 
+  - text: "hi welcome to pizza place. what would you like to order?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_ask_pizza_name:
+  - text: "Hi welcome to pizza factory. What would you like to order?"
+
+  utter_ask_size:
+  - text: "chosse between small,medium or large."
+
+  utter_ask_extra_cheese:
+  - text: "would you like to have some extra cheese on top of it?"
+
+  utter_ask_side_order:
+  - text: "any side order for breadsticks or drinks?"
+ 
+  utter_submit:
+    - text: "your bill is : {total_bill}"
+  
+  utter_thankyou:
+   - text: "thanks! your order is \nPizza name: {pizza_name}\nsize: {size}\ncheese toppings:{extra_cheese}\nside order: {side_order}\nYour bill is : {total_bill}"
+  
+  utter_empty_cheese:
+   - text: "thanks! your order is \nPizza name: {pizza_name}\nsize: {size}\nside order: {side_order}\nYour bill is : {total_bill}"
+
+  utter_empty_soder:
+   - text: "thanks! your order is \nPizza name: {pizza_name}\nsize: {size}\ncheese toppings:{extra_cheese}\nYour bill is : {total_bill}"
+
+  utter_both_empty:
+   - text: "thanks! your order is \nPizza name: {pizza_name}\nsize: {size}\nYour bill is : {total_bill}"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

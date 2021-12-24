@@ -1,0 +1,91 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+  
+- intent: pizza_name
+  examples: |
+    - i want [margarita] (pizza)
+    - [fresh pan] (pizza)
+    - [veggie special] (pizza)
+    - [farmhouse] (pizza)
+    - i want to order [cheese burst] (pizza)
+    - i want [paneer special] (pizza)
+    - one fresh [corn and onion] (pizza)
+    - i want [capsicum] (pizza)
+    - [corn and onion] (pizza)
+    - [onion and capsicum] (pizza)
+    - [onion and corn] (pizza)
+
+ 
+- intent: side_order
+  examples: |
+    - add a cold drink side_order to it 
+    - one choco lava side_order please
+    - breadsticks side_order please
+    - cheesy dip side_order
+
+- intent : extra_cheese
+  examples: |
+    - add extra cheese
+    - cheese
+    - one layer of cheese  
+
+- intent: size
+  examples: |
+    - small
+    - medium 
+    - large
+    - 7 inches
+    - seven inches
+    - 10 inches
+    - ten inches
+    - 12 inches
+    - twelve inches

@@ -1,0 +1,20 @@
+version: "2.0"
+
+rules:
+
+- rule: take order
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: order_form
+  - active_loop: order_form
+
+
+- rule: submit form
+  condition:
+  - active_loop : order_forn
+  steps:
+   - action: order_form
+   - active_loop: null
+   - action: action_submit
+
